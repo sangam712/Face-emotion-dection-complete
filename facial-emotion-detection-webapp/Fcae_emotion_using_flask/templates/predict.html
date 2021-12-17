@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+		<a href="http://127.0.0.1:5000/" target="_blank"> 
+			<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Back</button>
+		</a>
+        <div class="container">
+			<h1>
+				<a class="navbar-brand" href="#">Face Emotion Detection</a>
+			</h1>
+			<a href="https://www.pixelthoughts.co/" target="_blank" onclick="javascript:maxWindow(this, speedval);"> 
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Do Some Meditation</button>
+			</a>
+        </div>
+	</nav>
+
+	{%extends "base.html"%}
+
+	{%block content%}
+	
+	  <center>
+
+		<h1 class="font-italic">
+			You selected this image
+		</h1>
+		
+		<img src="{{url_for('static', filename='after.jpg')}}" height=40% width=40% >
+		
+		</body>
+		
+		<h2 class='text-primary'>You Are Looking <span class='text-primary font-weight-bold'> {{data}} </span> </h2>
+
+		
+
+		</center>
+		</div>
+		<br>
+		<br>
+		<footer class='foot'>
+				hi
+		</footer>
+	{%endblock%}
+   
+  
+    
+</body>
+</html>
+
+<script language="JavaScript">
+
+	function maxwindow(obj, sv)
+	{
+		window.open (href,"","fullscreen=yes");  
+	}
+
+</script>

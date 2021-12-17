@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="http://127.0.0.1:5000/">Face Emotion Detection</a>
+			<a href="https://www.pixelthoughts.co/" target="_blank" onclick="javascript:maxWindow(this, speedval);"> 
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Do Some Meditation</button>
+			</a>
+        </div>
+	</nav>
+
+	{%extends "base.html"%}
+
+	{%block content%}
+	
+	  <center>
+
+		<h1 class="font-italic">
+			You selected this image
+		</h1>
+		
+		<div style="justify-content: center; display: flex; margin-top: 30px;"><img src="{{ url_for('video') }}"></div>
+		
+		</body>
+		
+		<h2 class='text-primary'>You Are Looking <span class='text-primary font-weight-bold'> {{data}} </span> </h2>
+
+		
+
+		</center>
+		</div>
+
+
+	{%endblock%}

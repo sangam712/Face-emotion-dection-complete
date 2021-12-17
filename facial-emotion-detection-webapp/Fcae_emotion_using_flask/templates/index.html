@@ -1,0 +1,32 @@
+
+{%extends "base.html"%}
+
+{%block content%}
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <h1>
+      
+      <a class="navbar-brand" href="#">Face Emotion Detection</a>
+    </h1>
+      <a href="https://www.pixelthoughts.co/" target="_blank"> 
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Do Some Meditation</button>
+      </a>
+  </div>
+</nav>
+<div class="container mt-5">
+
+  <h2>Please select any image and press SUBMIT button...</h2>
+  <form name='frm' method='POST' action="{{url_for('predict')}}" enctype='multipart/form-data'>
+    
+    <div class="form-group">
+
+      	<div class="custom-file my-3">
+    		<input type="file" name="select_file">
+		</div>
+    
+    <input type="submit" name="btn" class='btn btn-primary'>
+
+</div>
+
+
+{%endblock%}
